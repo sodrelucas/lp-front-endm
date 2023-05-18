@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #674bb0;
+  font-family: sans-serif;
+}
+
+#background {
+  background-image: url(./images/bg-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+
+#logo {
+  display: block;
+  padding: 2%;
+  background-color: transparent;
+}
+
+#model {
+  background-color: transparent;
+  width: 40%;
+}
+
+#contentPC {
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  height: 70vh;
+  margin: 1% auto;
+}
+
+#content {
+  margin-left: 10%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+#content,
+h1,
+p,
+#icons,
+#instagram {
+  background-color: transparent;
+  margin-bottom: 2%;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  font-size: 2.5em;
+}
+
+#description {
+  color: white;
+  font-size: 1.4em;
+  margin-top: 5%;
+  text-align: center;
+  line-height: 35px;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5% auto;
+  width: 50%;
+  height: 50px;
+  border-radius: 40px;
+  border: none;
+  font-size: 1.1em;
+  background-color: white;
+  color: #684bb0bd;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #cf68f8;
+  color: white;
+}
+
+#icons {
+  display: flex;
+  justify-content: flex-end;
+  width: 90%;
+  height: 50px;
+}
+
+#icons img {
+  margin-right: 1%;
+  height: 40px;
+  cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  #background {
+    background-image: url(./images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #logo {
+    margin: 7% 5% 8% 10%;
+    width: 40%;
+    padding: 0;
+    display: inline;
+  }
+
+  #contentPC {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+
+    height: auto;
+  }
+
+  #model {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+    float: none;
+    background-color: transparent;
+  }
+
+  #content {
+    margin: 14% auto;
+    width: 75%;
+  }
+
+  #description {
+    color: white;
+    font-size: 1.4em;
+    margin-top: 5%;
+    text-align: center;
+    line-height: 35px;
+  }
+
+  #icons {
+    display: flex;
+    justify-content: center;
+    margin: 0 center;
+    height: 50px;
+    width: 100%;
+  }
+
+  #icons img {
+    height: 30px;
+    cursor: pointer;
+    margin-right: 2%;
+    margin-left: 2%;
+  }
+}
